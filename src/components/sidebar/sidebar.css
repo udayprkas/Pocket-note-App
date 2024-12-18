@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.leftcontainer {
+  width: 100%;
+  background-color: white(217, 27, 27);
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.pocket_notes {
+  font-family: Roboto;
+}
+.circlebutton {
+  position: sticky;
+  display: flex;
+  background-color: #16008b;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  left: 17rem;
+  bottom: 5%;
+  cursor: pointer;
+}
+@media only screen and (min-width: 700px) {
+  .leftcontainer {
+    width: 43%;
+    max-width: 300px;
+  }
+  .circlebutton {
+    left: 13rem;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+  }
+}
+
+
+
+
+
+
+.container1 {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  overflow-y: scroll;
+  height: 80%;
+  justify-content: center;
+  padding-top: 4rem;
+  scrollbar-width: none;
+  /* background-color: red; */
+}
+
+.left {
+  width: 95%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  /* background-color: #2f2f2f; */
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #f0f;
+  border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Text color */
+  font-weight: bold;
+  font-size: 20px; /* Adjust the font size */
+}
+
+.profile-container p {
+  margin-left: 10px;
+}
+.group {
+  display: flex;
+  align-items: center;
+  /* gap: 20px; */
+  padding: 25px 50px; /* Increase the padding */
+  cursor: pointer;
+  height: 60px; /* Increase the height */
+  width: 100%; /* Increase the width */
+  border-radius: 20px; /* Add border radius */
+}
+
+.active {
+  background-color: #2f2f2f2b;
+}
+
+/* responsive design */
